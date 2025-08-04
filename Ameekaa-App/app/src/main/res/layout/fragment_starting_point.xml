@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:scrollbars="none"
+    android:background="@color/background_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I couldn't seem to experience any positive feeling at all"
+            android:textSize="16sp"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/q1_never"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Never"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q1_sometimes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sometimes"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q1_often"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Often"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q1_always"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Almost Always"
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I found it difficult to work up the initiative to do things"
+            android:textSize="16sp"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/q2_never"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Never"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q2_sometimes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sometimes"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q2_often"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Often"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q2_always"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Almost Always"
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I felt that I had nothing to look forward to"
+            android:textSize="16sp"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/q3_never"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Never"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q3_sometimes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sometimes"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q3_often"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Often"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q3_always"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Almost Always"
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I felt down-hearted and blue"
+            android:textSize="16sp"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/q4_never"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Never"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q4_sometimes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sometimes"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q4_often"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Often"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q4_always"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Almost Always"
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+        <!-- Question 5 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I was unable to become enthusiastic about anything"
+            android:textSize="16sp"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/q5_never"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Never"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q5_sometimes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sometimes"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q5_often"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Often"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q5_always"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Almost Always"
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+        <!-- Question 6 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I felt I wasn't worth much as a person"
+            android:textSize="16sp"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/q6_never"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Never"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q6_sometimes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sometimes"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q6_often"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Often"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q6_always"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Almost Always"
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+        <!-- Question 7 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I felt that life was meaningless"
+            android:textSize="16sp"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/q7_never"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Never"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q7_sometimes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sometimes"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q7_often"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Often"
+                android:textColor="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/q7_always"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Almost Always"
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView> 

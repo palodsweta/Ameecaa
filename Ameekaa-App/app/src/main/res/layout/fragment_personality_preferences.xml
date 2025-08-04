@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:scrollbars="none"
+    android:background="@color/background_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Ideal Weekend Afternoon"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/q1_choice_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Getting lost in a good book, a deep documentary, or exploring a new topic on your own."
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioButton
+                android:id="@+id/q1_choice_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catching up with a group, enjoying the buzz of a lively place, and sharing stories."
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Planning a Vacation"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/q2_choice_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Curating a detailed plan to make the most of every moment."
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioButton
+                android:id="@+id/q2_choice_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book the flight, then let the adventure unfold spontaneously."
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+        <!-- Question 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rainy‑Day 'Me Time'"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/q3_choice_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diving into a creative project—writing, painting, playing music, or building something new."
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioButton
+                android:id="@+id/q3_choice_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tidying up your space, organizing your life, and creating calm through order."
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solving a Problem with a Friend"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/q4_choice_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Focusing on comforting them, validating their feelings, and making sure they feel supported and heard."
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioButton
+                android:id="@+id/q4_choice_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumping into problem-solving mode, analyzing the situation logically, and offering practical solutions."
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+        <!-- Question 5 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plans Suddenly Change"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/q5_choice_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take a breath, adapt, and look for the new possibilities."
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioButton
+                android:id="@+id/q5_choice_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feel tense or anxious until a new plan is set."
+                android:textColor="@color/text_white"/>
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView> 

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Ameekaa"
+        app:titleTextColor="@android:color/white"
+        app:logo="@drawable/ic_amica_leaf"
+        app:logoDescription="Ameekaa Logo" />
+
+    <!-- Single ScrollView for everything -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Ameekaa"
+                android:textColor="@color/text_white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your mindful companion for emotional wellness"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- User Selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select User Profile:"
+                android:textColor="@color/text_white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Spinner
+                android:id="@+id/user_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="#333333"
+                android:padding="12dp"/>
+
+            <!-- Starting Point Data Card -->
+            <LinearLayout
+                android:id="@+id/starting_point_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#333333"
+                android:padding="20dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Depression Assessment"
+                    android:textColor="@color/text_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/severity_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Severity: --"
+                    android:textColor="#4CAF50"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/depression_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score: --"
+                    android:textColor="@color/text_white"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <!-- Personality Data Card -->
+            <LinearLayout
+                android:id="@+id/personality_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#333333"
+                android:padding="20dp"
+                android:layout_marginBottom="24dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personality Profile"
+                    android:textColor="@color/text_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/personality_traits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading personality data..."
+                    android:textColor="@color/text_white"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="2dp"
+                    android:textIsSelectable="true"/>
+
+            </LinearLayout>
+
+            <!-- Audio Processing Section -->
+            <LinearLayout
+                android:id="@+id/audio_processing_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#2A2A2A"
+                android:padding="20dp"
+                android:layout_marginBottom="24dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audio Processing"
+                    android:textColor="@color/text_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btn_speaker_enrollment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Speaker Enrollment Audio"
+                    android:textColor="@color/text_white"
+                    android:backgroundTint="#4CAF50"
+                    android:layout_marginBottom="8dp"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/enrollment_file_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No file selected"
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btn_meeting_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Meeting Audio"
+                    android:textColor="@color/text_white"
+                    android:backgroundTint="#2196F3"
+                    android:layout_marginBottom="8dp"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/meeting_file_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No file selected"
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btn_custom_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diarization Process"
+                    android:textColor="@color/text_white"
+                    android:backgroundTint="#FF9800"
+                    android:layout_marginBottom="16dp"
+                    android:enabled="false"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/selected_audio_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/diarization_time_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#4CAF50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_play_output"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="▶️ Play Extracted Audio"
+                    android:textColor="@color/text_white"
+                    android:backgroundTint="#4CAF50"
+                    android:layout_marginBottom="8dp"
+                    android:enabled="false"
+                    android:visibility="gone"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/btn_analyze_sentiment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sentiment Analysis"
+                    android:textColor="@color/text_white"
+                    android:backgroundTint="#9C27B0"
+                    android:enabled="false"
+                    android:visibility="gone"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/sentiment_analysis_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_nudge_generation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nudge Generation"
+                    android:textColor="@color/text_white"
+                    android:backgroundTint="#FF5722"
+                    android:layout_marginTop="8dp"
+                    android:enabled="false"
+                    android:visibility="gone"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/nudge_generation_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/sentiment_processing_time_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#9C27B0"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"/>
+
+                <!-- Progress Bar for processing -->
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:indeterminate="true"/>
+
+                <!-- Status Text for updates -->
+                <TextView
+                    android:id="@+id/status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#CCCCCC"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

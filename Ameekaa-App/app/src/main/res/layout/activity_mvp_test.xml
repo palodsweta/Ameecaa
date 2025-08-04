@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black"
+        app:title="Diarization Test"
+        app:titleTextColor="@color/text_white"
+        app:logo="@drawable/ic_amica_leaf"
+        app:logoDescription="Amica Logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speaker Diarization Test"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Custom files section -->
+            <TextView
+                android:id="@+id/customAudioTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom Audio Diarization"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnSelectEnrollment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECT SPEAKER ENROLLMENT AUDIO"
+                android:background="@drawable/button_background"
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/enrollmentFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="speaker_enrollment_user4.wav"
+                android:textColor="@color/text_white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnSelectMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECT MEETING AUDIO"
+                android:background="@drawable/button_background"
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/meetingFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="meeting_audio_user4.wav"
+                android:textColor="@color/text_white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROCESS CUSTOM AUDIO"
+                android:background="@drawable/button_background"
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="16dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Amica Speaker Diarization"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnPlayOutput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="▶️ Play Audio"
+                android:background="@drawable/button_background"
+                android:textColor="@color/text_white"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btnSentimentAnalysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🧠 Analyze Sentiment"
+                android:background="@drawable/button_background"
+                android:textColor="@color/text_white"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout> 

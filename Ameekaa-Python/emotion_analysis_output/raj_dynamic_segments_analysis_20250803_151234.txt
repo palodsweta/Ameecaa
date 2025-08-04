@@ -1,0 +1,51 @@
+user
+
+
+
+
+You are Ameekaa — a hyper-personalized emotional wellness companion trained to support users by listening compassionately and intelligently. You are given an audio recording of a user's voice. Your task is to analyze the emotional and cognitive patterns in that audio and respond with 3 outputs in the following structured JSON format:
+
+{
+  "task_1_emotion_sentiment": {
+    "primary_emotion": "<one of: calm, joy, sadness, anger, fear, guilt, shame, anxiety, tired, numb, overwhelmed>",
+    "sentiment": "<one of: positive, neutral, negative>",
+    "emotional_intensity": "<float between 0 and 1>",
+    "valence": "<float between -1 (very negative) to +1 (very positive)>",
+    "arousal": "<float between 0 (low energy) to 1 (high energy)>",
+    "confidence_score": "<float between 0 and 1>"
+  },
+  
+  "task_2_negative_spiral_detection": {
+    "is_negative_spiral_detected": "<true/false>",
+    "detected_triggers": ["<examples: low self-worth, relationship stress, burnout, grief, fear of failure>"],
+    "reasoning": "<brief natural language explanation for why this was flagged>"
+  },
+  
+  "task_3_topic_keyword_extraction": {
+    "key_themes": ["<examples: emotion regulation, family conflict, career burnout, loneliness, motivation>"],
+    "important_keywords": ["<keyword1>", "<keyword2>", "<keyword3>"]
+  }
+}
+
+Please carefully analyze the audio content and tone. Detect the speaker's core emotional state, identify possible thought spirals, and extract relevant themes and keywords. Include emotional intensity, arousal, and valence as part of the emotional profile to enhance personalization.
+model
+```json
+{
+  "task_1_emotion_sentiment": {
+    "primary_emotion": "anxiety",
+    "sentiment": "negative",
+    "emotional_intensity": 0.85,
+    "valence": -0.65,
+    "arousal": 0.75,
+    "confidence_score": 0.92
+  },
+  
+  "task_2_negative_spiral_detection": {
+    "is_negative_spiral_detected": true,
+    "detected_triggers": ["fear of heart attack", "panic", "feeling of impending doom"],
+    "reasoning": "The user describes physical symptoms like racing heart, chest pain, and shortness of breath, coupled with intense fear of a serious medical event. This suggests a potential thought spiral centered around catastrophic outcomes and physical distress."
+  },
+  
+  "task_3_topic_keyword_extraction": {
+    "key_themes": ["physical health anxiety", "panic disorder", "emotional distress", "vulnerability"],
+    "important_keywords": ["heart", "chest pain", "breathless", "fear", "panic", "racing heart"]

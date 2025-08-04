@@ -1,0 +1,89 @@
+cheta:
+{
+  "task_1_emotion_sentiment": {
+    "primary_emotion": "anxiety",
+    "sentiment": "negative",
+    "emotional_intensity": 0.75,
+    "valence": -0.45,
+    "arousal": 0.65,
+    "confidence_score": 0.85
+  },
+  "task_2_negative_spiral_detection": {
+    "is_negative_spiral_detected": true,
+    "detected_triggers": ["self-doubt", "feeling overwhelmed", "difficulty coping"],    
+    "reasoning": "The user expresses difficulty understanding their own thoughts and feelings, and mentions feeling like their mind is 'doing things to their brain'. This suggests a potential negative thought pattern where they are struggling to manage their internal experience."
+  },
+  "task_3_topic_keyword_extraction": {
+    "key_themes": ["self-reflection", "emotional processing", "internal struggle"],     
+    "important_keywords": ["mind", "thoughts", "feeling", "difficult", "understand"]    
+  }
+}
+
+deepika:
+{
+  "task_1_emotion_sentiment": {
+    "primary_emotion": "sadness",
+    "sentiment": "negative",
+    "emotional_intensity": 0.85,
+    "valence": -0.75,
+    "arousal": 0.65,
+    "confidence_score": 0.92
+  },
+
+  "task_2_negative_spiral_detection": {
+    "is_negative_spiral_detected": true,
+    "detected_triggers": ["low self-worth", "lack of purpose", "feeling of being overwhelmed"],
+    "reasoning": "The speaker repeatedly expresses feelings of emptiness and a lack of motivation, suggesting a potential downward spiral of negative self-perception and emotional exhaustion."
+  },
+
+  "task_3_topic_keyword_extraction": {
+    "key_themes": ["emotional distress", "lack of motivation", "sense of emptiness", "personal struggles"],
+    "important_keywords": ["feeling", "empty", "tired", "sad", "purpose"]
+  }
+}
+
+raj:
+{
+  "task_1_emotion_sentiment": {
+    "primary_emotion": "anxiety",
+    "sentiment": "negative",
+    "emotional_intensity": 0.85,
+    "valence": -0.65,
+    "arousal": 0.75,
+    "confidence_score": 0.92
+  },
+
+  "task_2_negative_spiral_detection": {
+    "is_negative_spiral_detected": "true",
+    "detected_triggers": ["fear of heart attack", "panic", "worry about health"],       
+    "reasoning": "The speaker expresses intense fear and physical symptoms (chest pain, shortness of breath) related to a potential cardiac event. This suggests a negative thought spiral centered around a perceived threat to their well-being."
+  },
+
+  "task_3_topic_keyword_extraction": {
+    "key_themes": ["health anxiety", "physical symptoms", "fear", "panic"],
+    "important_keywords": ["heart", "chest pain", "breath", "fear", "panic"]
+  }
+}
+
+sami:
+{
+  "task_1_emotion_sentiment": {
+    "primary_emotion": "sadness",
+    "sentiment": "negative",
+    "emotional_intensity": 0.75,
+    "valence": -0.55,
+    "arousal": 0.65,
+    "confidence_score": 0.9
+  },
+
+  "task_2_negative_spiral_detection": {
+    "is_negative_spiral_detected": true,
+    "detected_triggers": ["isolation", "lack of understanding", "self-diagnosis", "feeling overwhelmed by emotions"],
+    "reasoning": "The speaker describes feeling isolated and unable to communicate their distress, leading to a self-diagnosis of depression. This suggests a potential negative spiral where feelings of sadness and lack of support reinforce the perception of a serious mental health issue."
+  },
+
+  "task_3_topic_keyword_extraction": {
+    "key_themes": ["mental health", "emotional distress", "communication difficulties", "self-awareness"],
+    "important_keywords": ["depression", "sadness", "talk", "understand"]
+  }
+}

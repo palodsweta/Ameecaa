@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:scrollbars="none"
+    android:background="@color/background_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Trusted Circle"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connecting with people we trust is a powerful way to navigate challenges. Let's think about the people who make up your circle of support, so I can help bring them to mind when you need that connection most."
+            android:textSize="16sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Privacy Notice Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#1A1A1A"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Privacy is Our Priority"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_white"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• The information you enter here is for your eyes only.\n• It will be securely encrypted and stored.\n• We will never contact anyone on your behalf without your direct action and permission.\n• You can add, edit, or remove this information at any time from your profile."
+                    android:textSize="14sp"
+                    android:textColor="@color/text_gray"
+                    android:lineSpacingExtra="8dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let's identify a few people in your trusted circle. Who is someone you feel you could talk to if you were having a difficult time?"
+            android:textSize="16sp"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- List of Trusted People -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerTrustedPeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/btnAddTrustedPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Add a Trusted Person"
+            android:textColor="@color/text_white"
+            android:background="@drawable/button_background"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView> 

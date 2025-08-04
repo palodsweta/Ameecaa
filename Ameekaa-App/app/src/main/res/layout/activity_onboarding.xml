@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Ameekaa Onboarding"
+        app:titleTextColor="@android:color/white"
+        app:logo="@drawable/ic_amica_leaf"
+        app:logoDescription="Ameekaa Logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Ameekaa"
+                android:textColor="@color/text_white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We're so glad you're here. Ameekaa means 'friend,' and that's exactly what we aim to be. A mindful companion who listens without judgment, speaks when needed, and stays silent when that's what heals. Not just an app, but a presence"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To begin, tell us: What brings you here today?\nSelect the option that feels closest to you."
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/optionsGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/optionDepression"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I've been finding little interest or pleasure in doing things, or feeling down, empty, or hopeless"
+                    android:textColor="@color/text_white"
+                    android:buttonTint="@color/text_white"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I've been feeling nervous, anxious, or on edge, or being unable to stop or control your worrying"
+                    android:textColor="@color/text_white"
+                    android:buttonTint="@color/text_white"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I've been feeling overwhelmed by your responsibilities, or so emotionally drained that it's hard to cope"
+                    android:textColor="@color/text_white"
+                    android:buttonTint="@color/text_white"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I want to feel calmer and more emotionally balanced"
+                    android:textColor="@color/text_white"
+                    android:buttonTint="@color/text_white"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I'm doing okay, but I want to grow and feel more positive"
+                    android:textColor="@color/text_white"
+                    android:buttonTint="@color/text_white"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I want to improve how I communicate in my relationships"
+                    android:textColor="@color/text_white"
+                    android:buttonTint="@color/text_white"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I want to improve my focus"
+                    android:textColor="@color/text_white"
+                    android:buttonTint="@color/text_white"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I'm here for personal growth and self-reflection"
+                    android:textColor="@color/text_white"
+                    android:buttonTint="@color/text_white"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Just exploring!"
+                    android:textColor="@color/text_white"
+                    android:buttonTint="@color/text_white"
+                    android:layout_marginBottom="16dp"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:background="@drawable/button_background"
+                android:textColor="@color/text_white"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout> 

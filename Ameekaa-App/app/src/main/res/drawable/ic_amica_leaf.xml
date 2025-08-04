@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Background rounded square -->
+    <path
+        android:pathData="M2,2 L22,2 L22,22 L2,22 Z"
+        android:fillColor="#FFF0F8FF" />
+    
+    <!-- Main leaf shape with gradient -->
+    <path
+        android:pathData="M12,5 C15,5 17,7 18,9 C19,11 18.5,14 17,16 C15.5,17.5 13.5,18.5 12,19 C10.5,18.5 8.5,17.5 7,16 C5.5,14 5,11 6,9 C7,7 9,5 12,5 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="7"
+                android:startY="5"
+                android:endX="17"
+                android:endY="19"
+                android:startColor="#FFFF9A8B"
+                android:centerColor="#FFFF8A65"
+                android:endColor="#FF4FC3F7" />
+        </aapt:attr>
+    </path>
+    
+    <!-- Leaf center highlight -->
+    <path
+        android:pathData="M12,6 C13.5,6 15,7.5 15.5,9 C15.8,10 15.5,11 14.5,12"
+        android:fillColor="#66FFFFFF" />
+        
+</vector> 

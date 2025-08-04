@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧠 Audio Sentiment Analysis"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2c3e50"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Status Text -->
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Initializing..."
+            android:textSize="16sp"
+            android:textColor="#34495e"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@drawable/rounded_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Download Model Button -->
+        <Button
+            android:id="@+id/btn_download_model"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="📥 Download Gemma3n Model"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="#3498db"
+            android:layout_marginBottom="12dp"
+            android:enabled="true" />
+
+        <!-- Select Audio Button -->
+        <Button
+            android:id="@+id/btn_select_audio"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🎵 Select Audio File"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="#9b59b6"
+            android:layout_marginBottom="12dp"
+            android:enabled="false" />
+
+        <!-- Analyze Audio Button -->
+        <Button
+            android:id="@+id/btn_analyze_audio"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🧠 Analyze Sentiment"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="#e74c3c"
+            android:layout_marginBottom="16dp"
+            android:enabled="false" />
+
+        <!-- Separator -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bdc3c7"
+            android:layout_marginVertical="16dp" />
+
+        <!-- Results Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Analysis Results"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2c3e50"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Result Text -->
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No analysis performed yet.\n\n1. Download the Gemma3n model\n2. Select an audio file\n3. Run sentiment analysis"
+            android:textSize="14sp"
+            android:textColor="#2c3e50"
+            android:padding="16dp"
+            android:background="@drawable/rounded_background_white"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="16dp"
+            android:minHeight="200dp" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="← Back to Main App"
+            android:textSize="14sp"
+            android:textColor="#7f8c8d"
+            android:background="@drawable/rounded_background_gray"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView> 

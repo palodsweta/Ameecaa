@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:scrollbars="none"
+    android:background="@color/background_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Conversations in Your Life"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The way we talk and connect shapes so much of our day. Let's explore this together."
+            android:textSize="16sp"
+            android:textColor="@color/text_gray"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Frequent Conversations -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Who do you have the most frequent conversations with?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkSelfTalk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostly by myself (self-talk, thinking out loud)"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="8dp"
+            android:buttonTint="@color/text_white"/>
+
+        <CheckBox
+            android:id="@+id/checkPartner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My partner / spouse"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="8dp"
+            android:buttonTint="@color/text_white"/>
+
+        <CheckBox
+            android:id="@+id/checkFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My family / roommates"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="8dp"
+            android:buttonTint="@color/text_white"/>
+
+        <CheckBox
+            android:id="@+id/checkFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My friends"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="8dp"
+            android:buttonTint="@color/text_white"/>
+
+        <CheckBox
+            android:id="@+id/checkColleagues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Colleagues at work"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="32dp"
+            android:buttonTint="@color/text_white"/>
+
+        <!-- Challenging Conversations -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Is there a specific relationship or type of conversation that you find particularly stressful or challenging right now? (Optional)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_white"
+            android:layout_marginBottom="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupChallenges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioPartnerFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes, with my partner/family"
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"
+                android:buttonTint="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/radioWorkSchool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes, at work/school"
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"
+                android:buttonTint="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/radioSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes, in social situations"
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"
+                android:buttonTint="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/radioOkay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not really, things are generally okay"
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"
+                android:buttonTint="@color/text_white"/>
+
+            <RadioButton
+                android:id="@+id/radioPreferNotSay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I prefer not to say"
+                android:textColor="@color/text_white"
+                android:layout_marginBottom="8dp"
+                android:buttonTint="@color/text_white"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView> 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme colors for night mode -->
+    <color name="colorPrimary">@color/accent_color</color>
+    <color name="colorPrimaryVariant">#FF2D5F9E</color>
+    <color name="colorOnPrimary">@color/white</color>
+    <color name="colorSecondary">@color/accent_color</color>
+    <color name="colorSecondaryVariant">#FF2D5F9E</color>
+    <color name="colorOnSecondary">@color/white</color>
+</resources> 

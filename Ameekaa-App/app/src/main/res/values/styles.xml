@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button style -->
+    <style name="Widget.Ameekaa.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@color/button_background</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Radio button style -->
+    <style name="Widget.Ameekaa.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:buttonTint">@color/text_white</item>
+    </style>
+
+    <!-- Checkbox style -->
+    <style name="Widget.Ameekaa.Checkbox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:buttonTint">@color/text_white</item>
+    </style>
+
+    <!-- Alert Dialog style -->
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:background">@color/background_black</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textColorPrimary">@color/text_white</item>
+        <item name="android:textColorSecondary">@color/text_gray</item>
+        <item name="buttonBarPositiveButtonStyle">@style/DialogButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/DialogButtonStyle</item>
+    </style>
+
+    <!-- Dialog Button style -->
+    <style name="DialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+</resources> 

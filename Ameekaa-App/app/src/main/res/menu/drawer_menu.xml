@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_onboarding"
+            android:icon="@drawable/ic_amica_leaf"
+            android:title="Ameekaa Onboarding" />
+        <item
+            android:id="@+id/nav_mvp_test"
+            android:title="Diarization Test" />
+    </group>
+</menu> 
