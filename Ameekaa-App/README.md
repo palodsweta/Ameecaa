@@ -3,16 +3,11 @@
 An Android application that uses AI to provide companionship and emotional support through natural conversations and emotional analysis.
 
 ## Features
-
-- Natural language conversations using Gemma 3B model
 - Voice interaction and audio processing
 - Emotion and sentiment analysis
-- Personalized companion creation
-- Secure data storage using DataStore
-- Dynamic topic and keyword extraction
+- Nudge generation
 
 ## Prerequisites
-
 - Android Studio Arctic Fox or newer
 - Android SDK 34
 - JDK 8 or newer
@@ -87,16 +82,17 @@ The app uses several key dependencies:
 For a complete list of dependencies and versions, see `requirements.txt`.
 
 ## Development
-
 The application is built using:
 - Kotlin for Android development
-- MVVM architecture
-- AndroidX libraries
-- Material Design 3 components
 
 ## License
 
 [Add your license information here]
 
 ## Contributing
-- Cursor and Clause Sonnet was used to generate the code
+
+## Acknowledgments
+- SpeechBrain for ECAPA-TDNN model
+- Google's Gemma model for emotion analysis
+- ONNX Runtime for model optimization
+- Cursor and Claude-Sonnet for code generation 
