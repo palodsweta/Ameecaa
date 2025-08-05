@@ -99,5 +99,4 @@ The application is built using:
 [Add your license information here]
 
 ## Contributing
-
-[Add contribution guidelines here] 
+- Cursor and Clause Sonnet was used to generate the code
