@@ -115,4 +115,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - SpeechBrain for ECAPA-TDNN model
 - Google's Gemma model for emotion analysis
-- ONNX Runtime for model optimization 
+- ONNX Runtime for model optimization
+- Cursor and Claude-Sonnet for code generation  
